@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com links</title>
+</head>
+<body>
+    <h1>Usando Links Externos</h1>
+    <p>Você pode acessar meu <a href="https://gustavoguanabara.github.io" >repositório público no GitHub</a></p><!--Tag <a> = âncora-->
+    <p>Você também pode acessar o meu <a href="https://youtube.com/cursoemvideo" target="_blank" rel="External">canal gratuito no youtube</a></p><!--O target ="_blank" e rel="External" servem para abrir o site em uma aba nova, ao invés de sobrepor, geralmente usado para linkar sites de terceiros-->   
+    
+    <h1>Usando Links Internos</h1>
+    <p>está é minha primeira página, caso queira acessar a minha segunda, <a href="pag002.html" rel="next" target="_self">clique aqui</a></p><!--tanto o rel "next" quanto "prev", dão um valor ao link, uma semântica, e são importantes para a busca do google-->
+    <p>Esta página é um oferecimento da <a href="https://www.hostnet.com.br" target="_blank" rel="nofollow">Hostnet</a></p> <!--O nofollow basicamente é você dizendo para o mecanismo de busca do google, que você não da aval aquele link-->
+    <p>Você também pode acessar a minha terceira página de notícias, <a href="noticias/pag003.html" rel="next" target="_self">cliquando aqui</a></p>
+
+    <h1>Links para download</h1>
+    <ul>
+        <li><a href="Class Diagram/Sistema Bancário (Class Diagram) .pdf" download="classdiagram.pdf" type="application/pdf">Baixar o Diagrama de Classe em PDF</a></li> <!--O download mostra o nome que vai ser dado ao arquivo pós baixado, e o type indica que o PDF vai ser baixado, e não aberto na própria página-->
+        <li><a href="Class Diagram/Sistema Bancário (Class Diagram) .zip" download="classdiagram.zip" type="application/zip">Diagrama de Classe compactado em ZIP</a></li> <!-- nem todo type é "application", para saber mais sobre qual usar, acessar o site: iana.org/assignments/mediatypes-->
+    </ul>
+</body>
+</html>
